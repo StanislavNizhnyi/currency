@@ -1,0 +1,15 @@
+server.port: 8900
+
+spring:
+  application.name: currency
+  datasource:
+    url: jdbc:postgresql://localhost:5432/currency
+    username: root
+    password: root
+  jpa:
+    hibernate.ddl-auto: validate
+    show-sql: true
+
+currency.exchange-rates:
+  server: https://apilayer.net/api/live
+  api-key: e36870efce167d98a1d4945dcc146284
