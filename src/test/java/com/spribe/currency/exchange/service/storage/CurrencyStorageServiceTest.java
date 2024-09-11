@@ -2,9 +2,7 @@ package com.spribe.currency.exchange.service.storage;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.Collections;
 import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

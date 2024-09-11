@@ -1,7 +1,5 @@
 package com.spribe.currency.exchange.controller;
 
-import com.spribe.currency.exchange.domain.entity.Currency;
-import com.spribe.currency.exchange.service.dictionary.CurrencyDictionaryService;
 import com.spribe.currency.exchange.service.storage.CurrencyStorageService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -14,10 +12,8 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
-import java.util.List;
 import java.util.Map;
 
-import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
