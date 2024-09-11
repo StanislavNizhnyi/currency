@@ -12,4 +12,4 @@ spring:
 
 currency.exchange-rates:
   server: https://apilayer.net/api/live
-  api-key: e36870efce167d98a1d4945dcc146284
+  api-key: <YOUR-API-CODE>
