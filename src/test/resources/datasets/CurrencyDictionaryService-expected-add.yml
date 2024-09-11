@@ -1,0 +1,3 @@
+currency:
+  - code: "regex:\\d+"
+    name: USD

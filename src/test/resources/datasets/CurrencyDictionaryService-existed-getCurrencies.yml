@@ -1,0 +1,7 @@
+currency:
+  - code: 1
+    name: TEST1
+  - code: 2
+    name: TEST2
+  - code: 3
+    name: TEST3

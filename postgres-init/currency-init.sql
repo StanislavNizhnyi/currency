@@ -1,0 +1,5 @@
+CREATE DATABASE "currency"
+WITH
+    OWNER = root
+    ENCODING = 'UTF8';
+GRANT ALL PRIVILEGES ON DATABASE "currency" TO root
