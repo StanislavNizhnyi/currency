@@ -1,9 +1,9 @@
 package com.spribe.currency.exchange.controller;
 
-import com.spribe.currency.exchange.domain.dto.AddCurrencyRateRequestDto;
 import com.spribe.currency.exchange.domain.entity.Currency;
 import com.spribe.currency.exchange.service.dictionary.CurrencyDictionaryService;
 import lombok.AllArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -25,10 +25,10 @@ public class CurrencyController {
                 .toList();
     }
 
-    @PostMapping(path = "/currencies", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Object> addCurrencyRate(@RequestBody AddCurrencyRateRequestDto addCurrencyRateRequestDto) {
-        currencyDictionaryService.add(addCurrencyRateRequestDto.getName());
-        return ResponseEntity.accepted().build();
+    @PutMapping(path = "/currencies/{code}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Object> addCurrency(@PathVariable String code) {
+        currencyDictionaryService.add(code);
+        return ResponseEntity.status(HttpStatus.ACCEPTED).build();
     }
 
 }

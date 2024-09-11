@@ -1,0 +1,4 @@
+currency_log:
+  - id: "regex:\\d+"
+    currency_source_name: "TEST_SOURCE_NAME"
+    updated_at: "2024-09-11 00:00:00"

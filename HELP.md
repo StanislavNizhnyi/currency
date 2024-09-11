@@ -6,9 +6,7 @@
 
 # API description:
 ### GET currencies list: GET /api/v1/currencies 
-### ADD currency to list : POST /api/v1/currencies 
-    body : 
-        {
-        "name" : "USD"
-        }
+### ADD currency to list : POST /api/v1/currencies/{code} 
+    where code is currency code for add
 ### GET currency rate for currency codeName: GET /api/v1/currency-rates?source=EUR
+    where source is a PARAM 
